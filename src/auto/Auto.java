@@ -10,7 +10,7 @@ public class Auto {
     //Set
     public void setMarca( String marcaNew ){ marca=marcaNew; }
     public void setModello( String modelloNew ){ modello=modelloNew; }
-    public void setPrezzo( double prezzoNew ){ prezzo=prezzoNew; }
+    public void setPrezzo( double prezzoNew ){ prezzo=Math.max(prezzoNew,0.0); }
 
     //Get
     public String getMarca() { return marca; }
@@ -26,7 +26,7 @@ public class Auto {
     public Auto(String marcaNew,String modelloNew, double prezzoNew){
         marca=marcaNew;
         modello=modelloNew;
-        prezzo=prezzoNew;
+        prezzo=Math.max(prezzoNew,0.0);
     }
     public Auto(String marcaNew){
         marca=marcaNew;
@@ -36,17 +36,17 @@ public class Auto {
     public Auto(double prezzoNew){
         marca=null;
         modello=null;
-        prezzo=prezzoNew;
+        prezzo=Math.max(prezzoNew,0.0);
     }
     public Auto(String marcaNew, double prezzoNew){
         marca=marcaNew;
         modello=null;
-        prezzo=prezzoNew;
+        prezzo=Math.max(prezzoNew,0.0);
     }
     //Inutile e confusionario questo sotto
     public Auto(double prezzoNew, String modelloNew){
         marca=null;
         modello=modelloNew;
-        prezzo=prezzoNew;
+        prezzo=Math.max(prezzoNew,0.0);
     }
 }
