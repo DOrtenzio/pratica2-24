@@ -27,9 +27,9 @@ public class TestAuto {
         Auto a4=new Auto("Opel","Meriva Benzina",5000.0);
 
         //Get
-        System.out.println("Auto 1:"+a1.getMarca()+" ; "+a1.getModello()+" ; "+a1.getPrezzo());
+        System.out.println("Auto 1:"+a1.getAuto());
         System.out.println("Auto 2:"+a2.getMarca()+" ; "+a2.getModello()+" ; "+a2.getPrezzo());
-        System.out.println("Auto 3:"+a3.getMarca()+" ; "+a3.getModello()+" ; "+a3.getPrezzo());
+        System.out.println("Auto 3:"+a3.getAuto());
         System.out.println("Auto 4:"+a4.getMarca()+" ; "+a4.getModello()+" ; "+a4.getPrezzo());
 
     }

@@ -16,6 +16,7 @@ public class Auto {
     public String getMarca() { return marca; }
     public String getModello() { return modello; }
     public double getPrezzo() { return prezzo; }
+    public String getAuto(){ return marca+" ; "+modello+" ; "+prezzo; }
 
     //Costruttori
     public Auto(){
@@ -26,7 +27,7 @@ public class Auto {
     public Auto(String marca, String modello, double prezzo){
         this.marca=marca;
         this.modello = modello;
-        this.prezzo=Math.max(prezzo,0.0);
+        setPrezzo(prezzo);
     }
     public Auto(String marca){
         this.marca=marca;
@@ -36,11 +37,11 @@ public class Auto {
     public Auto(double prezzo){
         this.marca=null;//Default
         this.modello=null;//Default
-        this.prezzo=Math.max(prezzo,0.0);
+        setPrezzo(prezzo);
     }
     public Auto(String marca, double prezzo){
         this.marca=marca;
         this.modello=null;//Default
-        this.prezzo=Math.max(prezzo,0.0);
+        setPrezzo(prezzo);
     }
 }
