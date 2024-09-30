@@ -19,34 +19,28 @@ public class Auto {
 
     //Costruttori
     public Auto(){
-        marca=null; //Default
-        modello=null; //Default
-        prezzo=0.0; //Default
+        this.marca=null; //Default
+        this.modello=null; //Default
+        this.prezzo=0.0; //Default
     }
-    public Auto(String marcaNew,String modelloNew, double prezzoNew){
-        marca=marcaNew;
-        modello=modelloNew;
-        prezzo=Math.max(prezzoNew,0.0);
+    public Auto(String marca, String modello, double prezzo){
+        this.marca=marca;
+        this.modello = modello;
+        this.prezzo=Math.max(prezzo,0.0);
     }
-    public Auto(String marcaNew){
-        marca=marcaNew;
-        modello=null;
-        prezzo=0.0;
+    public Auto(String marca){
+        this.marca=marca;
+        this.modello=null;//Default
+        this.prezzo=0.0;//Default
     }
-    public Auto(double prezzoNew){
-        marca=null;
-        modello=null;
-        prezzo=Math.max(prezzoNew,0.0);
+    public Auto(double prezzo){
+        this.marca=null;//Default
+        this.modello=null;//Default
+        this.prezzo=Math.max(prezzo,0.0);
     }
-    public Auto(String marcaNew, double prezzoNew){
-        marca=marcaNew;
-        modello=null;
-        prezzo=Math.max(prezzoNew,0.0);
-    }
-    //Inutile e confusionario questo sotto
-    public Auto(double prezzoNew, String modelloNew){
-        marca=null;
-        modello=modelloNew;
-        prezzo=Math.max(prezzoNew,0.0);
+    public Auto(String marca, double prezzo){
+        this.marca=marca;
+        this.modello=null;//Default
+        this.prezzo=Math.max(prezzo,0.0);
     }
 }
