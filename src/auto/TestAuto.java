@@ -9,21 +9,19 @@ public class TestAuto {
         //Inserire informzioni tramite set
         Auto a1=new Auto();
             System.out.println("AUTO 1\nInserisci marca");
-            a1.setMarca(in.nextLine());
+            a1.setMarca(in.next());
             System.out.println("Inserisci modello");
-            a1.setModello(in.nextLine());
+            a1.setModello(in.next());
             System.out.println("Inserisci prezzo");
-            a1.setPrezzo(in.nextDouble());
-        in.nextLine();
+            a1.setPrezzo(Double.parseDouble(in.next()));
         Auto a2=new Auto("Fiat","Panda Disel",15000.0);
         Auto a3=new Auto();
             System.out.println("AUTO 3\nInserisci marca");
-            a3.setMarca(in.nextLine());
+            a3.setMarca(in.next());
             System.out.println("Inserisci modello");
-            a3.setModello(in.nextLine());
+            a3.setModello(in.next());
             System.out.println("Inserisci prezzo");
-            a3.setPrezzo(in.nextDouble());
-        in.nextLine();
+            a3.setPrezzo(Double.parseDouble(in.next()));
         Auto a4=new Auto("Opel","Meriva Benzina",5000.0);
 
         //Get
