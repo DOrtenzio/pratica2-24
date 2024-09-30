@@ -17,14 +17,35 @@ public class Auto {
     public String getModello() { return modello; }
     public double getPrezzo() { return prezzo; }
 
-    //Costruttore
+    //Costruttori
     public Auto(){
-        marca=null;
-        modello=null;
-        prezzo=0.0;
+        marca=null; //Default
+        modello=null; //Default
+        prezzo=0.0; //Default
     }
     public Auto(String marcaNew,String modelloNew, double prezzoNew){
         marca=marcaNew;
+        modello=modelloNew;
+        prezzo=prezzoNew;
+    }
+    public Auto(String marcaNew){
+        marca=marcaNew;
+        modello=null;
+        prezzo=0.0;
+    }
+    public Auto(double prezzoNew){
+        marca=null;
+        modello=null;
+        prezzo=prezzoNew;
+    }
+    public Auto(String marcaNew, double prezzoNew){
+        marca=marcaNew;
+        modello=null;
+        prezzo=prezzoNew;
+    }
+    //Inutile e confusionario questo sotto
+    public Auto(double prezzoNew, String modelloNew){
+        marca=null;
         modello=modelloNew;
         prezzo=prezzoNew;
     }
